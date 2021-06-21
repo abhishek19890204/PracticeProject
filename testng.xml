@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Com.test.ExceptionTimeoutTest"/>
+      <class name="Com.test.TestNGPractice"/>
+      <class name="Com.test.TestPractice1"/>
+      <class name="Com.test.TestNGPractice2"/>
+      <class name="Com.test.InvocationCountTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
