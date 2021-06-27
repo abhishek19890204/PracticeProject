@@ -17,7 +17,8 @@ public class WaitsSelenium {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ASUS\\Desktop\\Selenium Driver\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
-		
+		// implicitly wait are also in dynamic in nature , it can be change anywhere for any element in the code
+		// Defined wait for webelement will be the same if same driver declaration for implicitly wait for all element through out the  program.
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20 , TimeUnit.SECONDS);
 		
@@ -35,6 +36,17 @@ public class WaitsSelenium {
 
 	}
 	
+	
+	/*
+	 * Explicit wait
+	 * 
+	 * 1 . No Explicit method or keyword for Explicit wait. 
+	 * 2 . Available with
+	 * webdriverwait with some ExpectedConditions 
+	 * 3 . Specific to element. 
+	 * 4 .Dynamic in nature.
+	 * 5 .  We should never use implcitly wait and Explicitly wait together in program.
+	 */
 	public static void SendkeysExpliciteWait(WebDriver driver , WebElement element , int timeOut, String value) {
 		
 		WebDriverWait WW = new WebDriverWait(driver ,timeOut);
